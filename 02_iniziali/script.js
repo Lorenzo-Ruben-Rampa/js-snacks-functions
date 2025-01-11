@@ -16,27 +16,4 @@ finalArray.push(prelievoIniziali);
 // Invoca la funzione qui e stampa il risultato in console
 console.log(finalArray);
 
-// Dichiara la funzione qui.
-function filteredArray(value, index, array) {
-    return array.indexOf(value) === index;
-}
-
-let uniqueArray = finalArray.filter(filteredArray);
-
-// Invoca la funzione qui e stampa il risultato in console
-console.log(uniqueArray);
-
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
-
-// Altri tentativi
-
-// let uniqueArray = finalArray.filter(function filteredArray (value, index, array) {
-//     return array.indexOf(value) === index;
-// });
-
-// function removeDuplicates(finalArray) {
-//     return finalArray.filter((item, index) => finalArray.indexOf(item) === index);
-// }
-
-// Rimuovo i duplicati
-// let uniqueArray = removeDuplicates(finalArray);
