@@ -1,29 +1,26 @@
 /* Scrivi una funzione che accetti un'array di stringhe e una lettera e restituisca un array contenente solo le parole che iniziano con quella lettera */
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
-// const firstletters = ["A", "L", "M"]
+let lettera = "A";
 
+// Dichiaro la funzione qui
+function filtraStringhe(nomiArray, letteraDecisa) {
 
-// Dichiara la funzione qui.    
-let prelievoIniziali = names.map(function inizialiPrelevate(nome) {
-    return nome[0]
-});
-const ogniInizialePrelevata = [];
+// Creo un nuovo array
+    const nomiFiltrati = [];
 
-function removeduplicates(ogniInizialePrelevata) {
-    const nomifiltrati = [];
-    for (let i = 0; i > .lenght; i++) {
+// Ciclo
+    for (let i = 0; i < nomiArray.lenght; i++) {
         let nome = nomiArray[i];
         if (nome.CharAt(0) === letteraDecisa) {
-
+        nomiFiltrati.push(nome);
         }
     }
-    return nomifiltrati
+    return nomiFiltrati;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-// Inizialiprelevate(nome);
-console.log();
+console.log(filtraStringhe(names, lettera));
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
