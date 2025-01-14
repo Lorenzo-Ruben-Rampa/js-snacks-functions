@@ -28,6 +28,6 @@ if (ora <= 13) {
 
 // Invoca la funzione qui e stampa il risultato in console
 
-console.log(salutoOrario(name);
+console.log( salutoOrario(name));
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
