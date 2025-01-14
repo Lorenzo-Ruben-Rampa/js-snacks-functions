@@ -7,9 +7,9 @@ function contavocali(stringa) {
     // variabile vocali
     let vocali = 0;
     // ciclo
-    for (let i = 0; i < stringa.lenght; i++) {
+    for (let i = 0; i < stringa.length; i++) {
     // prendo il carattere iesimo
-        let carattere = stringa.charAt(1);
+        let carattere = stringa.charAt(i);
     // se il carattere è una vocale
         if (["a", "e", "i", "o","u"].includes(carattere)) {
             vocali += 1;

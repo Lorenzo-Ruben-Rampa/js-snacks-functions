@@ -10,9 +10,9 @@ function filtraStringhe(nomiArray, letteraDecisa) {
     const nomiFiltrati = [];
 
 // Ciclo
-    for (let i = 0; i < nomiArray.lenght; i++) {
+    for (let i = 0; i < nomiArray.length; i++) {
         let nome = nomiArray[i];
-        if (nome.CharAt(0) === letteraDecisa) {
+        if (nome.charAt(0) === letteraDecisa) {
         nomiFiltrati.push(nome);
         }
     }
